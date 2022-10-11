@@ -14,21 +14,32 @@
 }
 
 #header {
-    grid-column: 2/11;
+    grid-column: 1/11;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50px);
 }
 
+.icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
 #header > .top-container {
     grid-column: 1/3;
+    grid-row: 1/2;
     display: grid;
     grid-template-areas: "search search search search search search search notIcon userDash userDash";
 }
 
 .search-bar {
     grid-area: search;
+}
+
+#search-bar-input {
+    width: 70%;
 }
 
 .notification-icon {
@@ -38,4 +49,3 @@
 .user-dashboard {
     grid-area: userDash;
 }
-
