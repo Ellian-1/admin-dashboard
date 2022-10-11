@@ -18,5 +18,24 @@
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px);
 }
+
+#header > .top-container {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-areas: "search search search search search search search notIcon userDash userDash";
+}
+
+.search-bar {
+    grid-area: search;
+}
+
+.notification-icon {
+    grid-area: notIcon;
+}
+
+.user-dashboard {
+    grid-area: userDash;
+}
+
