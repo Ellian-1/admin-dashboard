@@ -19,6 +19,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50px);
+    background-color: #1d4ed8;
+    color: #f1f5f9;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .icons {
@@ -40,6 +43,8 @@
 
 #search-bar-input {
     width: 70%;
+    height: 25px;
+    border-radius: 5px;
 }
 
 .notification-icon {
@@ -48,4 +53,38 @@
 
 .user-dashboard {
     grid-area: userDash;
+    display: flex;
+    align-items: center;
+}
+
+#user-dash-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#header > .navbar {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-areas: "welcomeUser welcomeUser welcomeUser welcomeUser welcomeUser welcomeUser welcomeUser btn btn btn";
+}
+
+.welcome-user {
+    grid-area: welcomeUser;
+    display: flex;
+}
+
+.buttons {
+    grid-area: btn;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons > .button {
+    flex-grow: 1;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    margin: 5px;
 }
