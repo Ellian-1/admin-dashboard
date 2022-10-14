@@ -97,3 +97,45 @@
 
 /* Styles for the aside element */
 
+#sidebar {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    background-color: #cbd5e1;
+    color: #334155;   
+}
+
+#logo {
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+#links-container {
+    grid-row: 2/10;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+#functionalities {
+    display: grid;
+    grid-template-rows: repeat(6, 40px);
+}
+
+#configuration {
+    display: grid;
+    grid-template-rows: repeat(3, 40px);
+}
+
+.sb-img {
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #334155;
+}
