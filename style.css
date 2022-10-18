@@ -98,6 +98,8 @@
 /* Styles for the aside element */
 
 #sidebar {
+    grid-column: 1/2;
+    grid-row: 2/11;
     display: grid;
     grid-template-rows: repeat(9, 1fr);
     background-color: #cbd5e1;
@@ -138,4 +140,10 @@
 a {
     text-decoration: none;
     color: #334155;
+}
+
+/* Dashboard section */
+
+#dashboard {
+
 }
